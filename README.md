@@ -1,10 +1,10 @@
 # Azure Betting Odds App
 
-[![ASP.NET Core Web App Build/Test/Deploy workflow](https://github.com/chrisbrown-01/Azure-Betting-Odds-App/actions/workflows/Betting-Odds-App.yml/badge.svg?branch=main)](https://github.com/chrisbrown-01/Azure-Betting-Odds-App/actions/workflows/Betting-Odds-App.yml)
+[![ASP.NET Core Web App Build/Test/Deploy workflow](https://github.com/chrisbrown-01/Azure-Betting-Odds-App/actions/workflows/Betting-Odds-App.yml/badge.svg)](https://github.com/chrisbrown-01/Azure-Betting-Odds-App/actions/workflows/Betting-Odds-App.yml)
 
-[![Azure Function Build/Test/Deploy workflow](https://github.com/chrisbrown-01/Azure-Betting-Odds-App/actions/workflows/BettingOddsApiAzureFunction.yml/badge.svg?branch=main)](https://github.com/chrisbrown-01/Azure-Betting-Odds-App/actions/workflows/BettingOddsApiAzureFunction.yml)
+[![Azure Function Build/Test/Deploy workflow](https://github.com/chrisbrown-01/Azure-Betting-Odds-App/actions/workflows/BettingOddsApiAzureFunction.yml/badge.svg)](https://github.com/chrisbrown-01/Azure-Betting-Odds-App/actions/workflows/BettingOddsApiAzureFunction.yml)
 
-[![CodeQL](https://github.com/chrisbrown-01/Azure-Betting-Odds-App/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/chrisbrown-01/Azure-Betting-Odds-App/actions/workflows/codeql.yml)
+[![CodeQL](https://github.com/chrisbrown-01/Azure-Betting-Odds-App/actions/workflows/codeql.yml/badge.svg)](https://github.com/chrisbrown-01/Azure-Betting-Odds-App/actions/workflows/codeql.yml)
  .
 -Azure Function
 -ASP.NET Core Razor pages project hosted with Azure App Service
