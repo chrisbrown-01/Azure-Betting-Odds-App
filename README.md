@@ -5,7 +5,7 @@
 [![Azure Function Build/Test/Deploy workflow](https://github.com/chrisbrown-01/Azure-Betting-Odds-App/actions/workflows/BettingOddsApiAzureFunction.yml/badge.svg?branch=main)](https://github.com/chrisbrown-01/Azure-Betting-Odds-App/actions/workflows/BettingOddsApiAzureFunction.yml)
 
 [![CodeQL](https://github.com/chrisbrown-01/Azure-Betting-Odds-App/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/chrisbrown-01/Azure-Betting-Odds-App/actions/workflows/codeql.yml)
- 
+ .
 -Azure Function
 -ASP.NET Core Razor pages project hosted with Azure App Service
 -Retrieves and caches MMA betting lines from https://the-odds-api.com/ API
