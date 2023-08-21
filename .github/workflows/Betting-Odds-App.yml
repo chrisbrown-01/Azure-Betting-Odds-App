@@ -23,7 +23,7 @@ jobs:
     - name: Build
       run: dotnet build "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-restore
     - name: Install Playwright browser binaries
-      run: pwsh "${{ env.WORKING_DIRECTORY }}\..\BettingOddsCalculatorTests_Playwright\bin\Debug\net7.0\playwright.ps1" install
+      run: pwsh BettingOddsCalculatorTests_Playwright\bin\Debug\net7.0\playwright.ps1 install
     - name: Test
       run: dotnet test "${{ env.WORKING_DIRECTORY }}" --no-build
     - name: Publish
