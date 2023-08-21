@@ -42,6 +42,8 @@ namespace BettingOddsCalculator.Pages
 
         public IActionResult OnGet()
         {
+            _logger.LogInformation("Index page GET request received.");
+
             if (!ModelState.IsValid) return Page();
 
             var winningsAndPayout = _calculations.CalculateWinningsAndPayout(AmericanOdds, BetAmount);

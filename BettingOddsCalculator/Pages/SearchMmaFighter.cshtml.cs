@@ -40,6 +40,8 @@ namespace BettingOddsCalculator.Pages
 
         public async Task<IActionResult> OnGetAsync()
         {
+            _logger.LogInformation("Search page GET request received.");
+
             if (!ModelState.IsValid) return Page();
 
             var httpClient = _httpClientFactory.CreateClient("SearchMmaFighter");
