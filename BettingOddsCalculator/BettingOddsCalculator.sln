@@ -5,7 +5,9 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BettingOddsCalculator", "BettingOddsCalculator.csproj", "{E677386D-7F4F-4F57-9BA9-55EE254BBB47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BettingOddsCalculatorTests", "..\BettingOddsCalculatorTests\BettingOddsCalculatorTests.csproj", "{A5884EF3-9C7D-45D9-AF0E-4D3931C6060F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BettingOddsCalculatorTests", "..\BettingOddsCalculatorTests\BettingOddsCalculatorTests.csproj", "{A5884EF3-9C7D-45D9-AF0E-4D3931C6060F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BettingOddsCalculatorTests_Playwright", "..\BettingOddsCalculatorTests_Playwright\BettingOddsCalculatorTests_Playwright.csproj", "{C0F2E76E-77FF-4AB3-BC39-5D45F3A79B51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A5884EF3-9C7D-45D9-AF0E-4D3931C6060F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5884EF3-9C7D-45D9-AF0E-4D3931C6060F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5884EF3-9C7D-45D9-AF0E-4D3931C6060F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0F2E76E-77FF-4AB3-BC39-5D45F3A79B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0F2E76E-77FF-4AB3-BC39-5D45F3A79B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0F2E76E-77FF-4AB3-BC39-5D45F3A79B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0F2E76E-77FF-4AB3-BC39-5D45F3A79B51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
