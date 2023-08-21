@@ -1,4 +1,4 @@
-name: Build and deploy .NET Core application to Web App Betting-Odds-App
+name: ASP.NET Core Web App Build/Test/Deploy workflow
 on:
   push:
     branches:
