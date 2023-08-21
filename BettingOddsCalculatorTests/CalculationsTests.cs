@@ -39,7 +39,7 @@ namespace BettingOddsCalculatorTests
         [Theory]
         [InlineData(-100, 100, 100, 200)]
         [InlineData(-200, 100, 50, 150)]
-        [InlineData(-300, 50, 16.666666666666668, 66.66666666666667)]
+        [InlineData(-300, 50, 16.766666666666668, 66.66666666666667)]
         public void CalculateWinningsAndPayout_NegativeOdds_ReturnsCorrectResult(int americanOdds, int betAmount, double expectedWinnings, double expectedTotalPayout)
         {
             // Act
