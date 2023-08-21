@@ -6,7 +6,6 @@ namespace BettingOddsCalculator
 {
     public class Program
     {
-        // TODO: test logging in azure, if it works implement full proper logging
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
