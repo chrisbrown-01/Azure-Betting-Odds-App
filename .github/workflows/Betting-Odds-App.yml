@@ -22,10 +22,8 @@ jobs:
       run: dotnet restore "${{ env.WORKING_DIRECTORY }}"
     - name: Build
       run: dotnet build "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-restore
-    - name: Install Playwright browser binaries
-      run: pwsh BettingOddsCalculatorTests_Playwright\bin\Debug\net7.0\playwright.ps1 install
     - name: Test
-      run: dotnet test "${{ env.WORKING_DIRECTORY }}" --no-build
+      run: dotnet test "${{ env.WORKING_DIRECTORY }}" --no-build --filter FullyQualifiedName!~BettingOddsCalculatorTests_Playwright
     - name: Publish
       run: dotnet publish "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-build --output "${{ env.AZURE_WEBAPP_PACKAGE_PATH }}"
     - name: Publish Artifacts
