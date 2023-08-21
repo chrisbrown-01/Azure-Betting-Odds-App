@@ -1,4 +1,4 @@
-name: Build and deploy .NET Core application to Function App BettingOddsApiAzureFunction
+name: Azure Function Build/Test/Deploy workflow
 on:
   push:
     branches:
