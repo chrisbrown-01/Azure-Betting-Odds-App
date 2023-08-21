@@ -1,0 +1,7 @@
+﻿Create key vault (don't use RBAC because run into issues with accessing via Azure Configuration Explorer)
+
+Create secret in key vault
+
+Add a Key Vault reference to App Configuration
+
+follow instructions: https://learn.microsoft.com/en-us/azure/azure-app-configuration/use-key-vault-references-dotnet-core?tabs=core6x

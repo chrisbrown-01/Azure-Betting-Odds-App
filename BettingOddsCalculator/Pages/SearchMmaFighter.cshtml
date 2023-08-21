@@ -1,0 +1,62 @@
+﻿@page
+@model BettingOddsCalculator.Pages.SearchMmaFighterModel
+@{
+    ViewData["Title"] = "Search MMA Fighter";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Search MMA Fighter</h1>
+    <p>Enter the name of the MMA fighter you wish to search betting odds for.</p>
+</div>
+
+<form method="get">
+    <div class="form-group">
+        <label asp-for="FighterName" class="control-label"></label>
+        <input asp-for="FighterName" class="form-control" placeholder="Conor McGregor" />
+        <span asp-validation-for="FighterName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="BetAmount" class="control-label"></label>
+        <input asp-for="BetAmount" class="form-control" placeholder="100" />
+        <span asp-validation-for="BetAmount" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Search" class="btn btn-primary" />
+    </div>
+</form>
+
+@if (ModelState.IsValid)
+{
+    @if(Model.MmaMatchups.Count > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.MmaMatchups.First().FighterName)</th>
+                    <th>@Html.DisplayNameFor(model => model.MmaMatchups.First().FighterOdds)</th>
+                    <th>@Html.DisplayNameFor(model => model.MmaMatchups.First().OpponentName)</th>
+                    <th>@Html.DisplayNameFor(model => model.MmaMatchups.First().OpponentOdds)</th>
+                    <th>@Html.DisplayNameFor(model => model.MmaMatchups.First().Bookmaker)</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var matchup in Model.MmaMatchups)
+                {
+                    <tr>
+                        <td>@matchup.FighterName</td>
+                        <td><a asp-page="Index" asp-route-AmericanOdds="@matchup.FighterOdds" asp-route-BetAmount="@Model.BetAmount">@matchup.FighterOdds</a></td>
+                        <td>@matchup.OpponentName</td>
+                        <td><a asp-page="Index" asp-route-AmericanOdds="@matchup.OpponentOdds" asp-route-BetAmount="@Model.BetAmount">@matchup.OpponentOdds</a></td>
+                        <td>@matchup.Bookmaker</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="text-center">
+            <h5>No results found.</h5>
+        </div>
+    }
+}
